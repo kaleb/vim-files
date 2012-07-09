@@ -1,6 +1,7 @@
 " Author: kaleb@horns.by
 
-" runtime bundle/pathogen/autoload/pathogen.vim | call pathogen#infect()
+runtime bundle/pathogen/autoload/pathogen.vim | call pathogen#infect()
+Helptags
 
 set nocp ru sc is ls=2 hi=50 bs=indent,eol,start
 
