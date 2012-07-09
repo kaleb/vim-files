@@ -7,3 +7,6 @@
 [submodule "bundle/calendar"]
 	path = bundle/calendar
 	url = git://github.com/mattn/calendar-vim.git
+[submodule "bundle/zencoding"]
+	path = bundle/zencoding
+	url = git://github.com/mattn/zencoding-vim.git
