@@ -1,2 +1,4 @@
-"vimscript vim settings by kaleb@horns.by
-setl kp=:h
+" vimscript settings
+" Author: <kaleb@horns.by>
+
+setl kp=:help
