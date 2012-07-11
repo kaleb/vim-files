@@ -2,19 +2,24 @@
 	path = bundle/pathogen
 	url = git://github.com/tpope/vim-pathogen.git
 	fetchRecurseSubmodules = true
+	ignore = untracked
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
 	fetchRecurseSubmodules = true
+	ignore = untracked
 [submodule "bundle/calendar"]
 	path = bundle/calendar
 	url = git://github.com/mattn/calendar-vim.git
 	fetchRecurseSubmodules = true
+	ignore = untracked
 [submodule "bundle/zencoding"]
 	path = bundle/zencoding
 	url = git://github.com/mattn/zencoding-vim.git
 	fetchRecurseSubmodules = true
+	ignore = untracked
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = git://github.com/vim-scripts/matchit.zip.git
 	fetchRecurseSubmodules = true
+	ignore = untracked
