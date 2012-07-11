@@ -1,4 +1,4 @@
-" Author: kaleb@horns.by
+" Author: <http://kaleb.horns.by>
 
 runtime bundle/pathogen/autoload/pathogen.vim | call pathogen#infect()
 Helptags
@@ -9,6 +9,8 @@ if has('mouse') | set mouse=a | endif
 if &t_Co > 2 || has("gui_running") | sy on | set hls | endif
 
 if has("vms") | set nobk | else | set bk | endif
+
+if &sh =~ 'fish' | set sh=/bin/bash | endif
 
 if has("autocmd") " ------------------------------------------------------ {{{
   filet plugin indent on
