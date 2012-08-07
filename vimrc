@@ -3,7 +3,7 @@
 runtime bundle/pathogen/autoload/pathogen.vim | call pathogen#infect()
 Helptags
 
-set nocp ru sc is ls=2 hi=50 bs=indent,eol,start
+set nocp ru sc is ls=2 hi=50 bs=indent,eol,start ssop-=options
 
 if has('mouse') | set mouse=a | endif
 if &t_Co > 2 || has("gui_running") | sy on | set hls | endif
