@@ -31,9 +31,6 @@ endif " }}}
 
 " <Space> as half-page down
 nnoremap <Space>    <C-D>
-" Better search
-nnoremap /          /\v
-nnoremap //         :nohlsearch<CR>
 " Next and previous tab
 nnoremap <C-Tab>    gt
 nnoremap <S-C-Tab>  gT
