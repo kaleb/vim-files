@@ -23,3 +23,7 @@
 	url = git://github.com/vim-scripts/matchit.zip.git
 	fetchRecurseSubmodules = true
 	ignore = untracked
+[submodule "bundle/NERDTree"]
+	path = bundle/NERDTree
+	url = git://github.com/scrooloose/nerdtree
+	fetchRecurseSubmodules = true
