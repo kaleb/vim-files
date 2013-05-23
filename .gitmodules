@@ -27,3 +27,6 @@
 	path = bundle/NERDTree
 	url = git://github.com/scrooloose/nerdtree
 	fetchRecurseSubmodules = true
+[submodule "bundle/vim-less"]
+	path = bundle/vim-less
+	url = git@github.com:groenewege/vim-less.git
