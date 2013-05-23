@@ -27,7 +27,3 @@
 	path = bundle/NERDTree
 	url = git://github.com/scrooloose/nerdtree
 	fetchRecurseSubmodules = true
-[submodule "bundle/MiniBufExplorer"]
-	path = bundle/MiniBufExplorer
-	url = git://github.com/fholgado/minibufexpl.vim.git
-	fetchRecurseSubmodules = true
