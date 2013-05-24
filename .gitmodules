@@ -30,3 +30,12 @@
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = git@github.com:groenewege/vim-less.git
+[submodule "bundle/html5.vim"]
+	path = bundle/html5.vim
+	url = git@github.com:othree/html5.vim.git
+[submodule "bundle/mustache"]
+	path = bundle/mustache
+	url = git@github.com:juvenn/mustache.vim.git
+[submodule "bundle/css3"]
+	path = bundle/css3
+	url = git@github.com:hail2u/vim-css3-syntax.git
