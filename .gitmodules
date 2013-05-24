@@ -39,3 +39,9 @@
 [submodule "bundle/css3"]
 	path = bundle/css3
 	url = git@github.com:hail2u/vim-css3-syntax.git
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = git@github.com:tpope/vim-surround.git
+[submodule "bundle/repeat"]
+	path = bundle/repeat
+	url = git@github.com:tpope/vim-repeat.git
