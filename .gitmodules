@@ -51,3 +51,9 @@
 [submodule "bundle/speeddating"]
 	path = bundle/speeddating
 	url = git@github.com:tpope/vim-speeddating.git
+[submodule "bundle/python-flake8"]
+	path = bundle/python-flake8
+	url = git@github.com:nvie/vim-flake8.git
+[submodule "bundle/python-indent"]
+	path = bundle/python-indent
+	url = git@github.com:hynek/vim-python-pep8-indent.git
