@@ -5,6 +5,9 @@ Helptags
 
 set nocp ru sc is ls=2 hi=50 bs=indent,eol,start ssop-=options
 
+" see: ":help cpo-J", and http://stevelosh.com/blog/2012/10/why-i-two-space/
+set cpo+=J
+
 if has('mouse') | set mouse=a | endif
 if &t_Co > 2 || has("gui_running") | sy on | set hls | endif
 
