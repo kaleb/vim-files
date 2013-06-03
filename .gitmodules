@@ -54,3 +54,9 @@
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = git@github.com:ervandew/supertab.git
+[submodule "bundle/python-flake8"]
+	path = bundle/python-flake8
+	url = git@github.com:nvie/vim-flake8.git
+[submodule "bundle/python-indent"]
+	path = bundle/python-indent
+	url = git@github.com:hynek/vim-python-pep8-indent.git
