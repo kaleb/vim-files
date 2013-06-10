@@ -1,13 +1,13 @@
 " Author: <http://kaleb.horns.by>
 
-runtime bundle/pathogen/autoload/pathogen.vim | call pathogen#infect()
+ru bundle/pathogen/autoload/pathogen.vim | call pathogen#infect()
 Helptags
 let $MYVIMRC = expand("<sfile>")
 
-set nocp ru sc is ls=2 hi=50 bs=indent,eol,start ssop-=options top
+set nocp ruler sc incsearch laststatus=2 history=50 bs=indent,eol,start ssop-=options top
 
 " see: ":help cpo-J", and http://stevelosh.com/blog/2012/10/why-i-two-space/
-set cpo+=J
+set cpoptions+=J
 
 if has('mouse') | set mouse=a | endif
 if &t_Co > 2 || has("gui_running") | sy on | set hls | endif
