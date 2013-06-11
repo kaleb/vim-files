@@ -4,7 +4,7 @@ runtime bundle/pathogen/autoload/pathogen.vim | call pathogen#infect()
 Helptags
 let $MYVIMRC = expand("<sfile>")
 
-set nocp ru sc is ls=2 hi=50 bs=indent,eol,start ssop-=options top
+set nocp ru sc is ls=2 hi=50 bs=indent,eol,start ssop-=options top wildmenu
 
 " see: ":help cpo-J", and http://stevelosh.com/blog/2012/10/why-i-two-space/
 set cpo+=J
