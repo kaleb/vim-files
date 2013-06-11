@@ -1,13 +1,22 @@
 " Author: <http://kaleb.horns.by>
 
-runtime bundle/pathogen/autoload/pathogen.vim | call pathogen#infect()
+ru bundle/pathogen/autoload/pathogen.vim | call pathogen#infect()
 Helptags
 let $MYVIMRC = expand("<sfile>")
 
-set nocp ru sc is ls=2 hi=50 bs=indent,eol,start ssop-=options top wildmenu
+set nocp
+set ruler
+set sc
+set incsearch
+set laststatus=2
+set history=50
+set bs=indent,eol,start
+set ssop-=options
+set top
+set wildmenu
 
 " see: ":help cpo-J", and http://stevelosh.com/blog/2012/10/why-i-two-space/
-set cpo+=J
+set cpoptions+=J
 
 if has('mouse') | set mouse=a | endif
 if &t_Co > 2 || has("gui_running") | sy on | set hls | endif
@@ -16,22 +25,22 @@ if has("vms") | set nobk | else | set bk | endif
 
 if &sh =~ 'fish' | set sh=/bin/bash | endif
 
-if has("autocmd") " ------------------------------------------------------ {{{
-  filet plugin indent on
-  aug vimrcEx | au!
-    " Jump to the last position when reopening a file.
-    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") |
-      \   exe "normal! g`\"" | endif
-  aug END
+if has("autocmd")
+	filet plugin indent on
+	aug vimrcEx | au!
+		" Jump to the last position when reopening a file.
+		au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") |
+		\   exe "normal! g`\"" | endif
+	aug END
 else
-  set ai
-endif " }}}
-" Diff Original File: see the diff between current buff & original file {{{
+	set ai
+endif
+" Diff Original File: see the diff between current buff & original file
 if !exists(":DiffOrig")
-  com DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
-		  \ | wincmd p | diffthis
-endif " }}}
-" Mappings: -------------------------------------------------------------- {{{
+	com DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
+	\ | wincmd p | diffthis
+endif
+" Mappings: --------------------------------------------------------------
 
 " <Space> as half-page down
 nnoremap <Space>    <C-D>
@@ -46,13 +55,13 @@ noremap!           `
 noremap            ~
 noremap!           ~
 "÷
-" }}}
-" Exercises: ------------------------------------------------------------- {{{
+
+" Exercises: -------------------------------------------------------------
 nnoremap <Leader>j  ddp
 nnoremap <Leader>k  ddkP
 nnoremap <Leader>ev :vs $MYVIMRC<CR>
-" }}} Exercises
-" Old Settings: to be reviewed {{{
+
+" Old Settings: to be reviewed
 "version 6.0
 "if &cp | set nocp | endif
 "let s:cpo_save=&cpo
@@ -88,6 +97,5 @@ nnoremap <Leader>ev :vs $MYVIMRC<CR>
 " so that you can undo CTRL-U after inserting a line break.
 "inoremap <C-U> <C-G>u<C-U>
 "
-" }}} Old Settings
 
 " vim:fdm=marker
