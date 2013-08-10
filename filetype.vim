@@ -1,5 +1,6 @@
-if exists("did\_load\_filetypes")
- finish
+"See :help new-filetype §C
+if exists("did_load_filetypes")
+  finish
 endif
 
 augroup filetypedetect
