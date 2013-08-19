@@ -14,6 +14,8 @@ set bs=indent,eol,start
 set ssop-=options
 set top
 set wildmenu
+set splitbelow
+set splitright
 
 " see: ":help cpo-J", and http://stevelosh.com/blog/2012/10/why-i-two-space/
 set cpoptions+=J
@@ -29,8 +31,10 @@ if has("autocmd")
 	filet plugin indent on
 	aug vimrcEx | au!
 		" Jump to the last position when reopening a file.
-		au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") |
-		\   exe "normal! g`\"" | endif
+		au BufReadPost *
+		\ if line("'\"") > 1 && line("'\"") <= line("$") |
+		\	exe "normal! g`\"" |
+		\ endif
 	aug END
 else
 	set ai
