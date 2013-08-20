@@ -24,7 +24,15 @@ set splitright
 " see: ":help cpo-J", and http://stevelosh.com/blog/2012/10/why-i-two-space/
 set cpoptions+=J
 
-if has('mouse') | set mouse=a | endif
+if has('mouse')
+	set mouse=a
+
+	" Fix mouse under tmux
+	" TODO: this is probably something that I should fix in my tmux settings
+	if !empty($TMUX) && &ttym == "xterm"
+		set ttym=xterm2
+	end
+end
 if &t_Co > 2 || has("gui_running") | sy on | set hls | endif
 
 if has("vms") | set nobk | else | set bk | endif
