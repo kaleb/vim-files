@@ -1,8 +1,12 @@
 " Author: <http://kaleb.horns.by>
 
-ru bundle/pathogen/autoload/pathogen.vim | call pathogen#infect()
-Helptags
 let $MYVIMRC = expand("<sfile>")
+
+ru bundle/pathogen/autoload/pathogen.vim
+if exists("g:loaded_pathogen")
+  exec pathogen#infect()
+  Helptags
+endif
 
 set nocp
 set ruler
