@@ -2,60 +2,64 @@
 
 let $MYVIMRC = expand("<sfile>")
 
-ru bundle/pathogen/autoload/pathogen.vim
+runtime bundle/pathogen/autoload/pathogen.vim
 if exists("g:loaded_pathogen")
   exec pathogen#infect()
   Helptags
 endif
 
-set nocp
+" Options --------------------------------------------------------------------
+" Statusline
 set ruler
-set sc
-set incsearch
+set showcmd
 set laststatus=2
+
+set incsearch
 set history=50
 set bs=indent,eol,start
 set ssop-=options
-set top
+set tildeop
 set wildmenu
 set splitbelow
 set splitright
-
-" see: ":help cpo-J", and http://stevelosh.com/blog/2012/10/why-i-two-space/
-set cpoptions+=J
+set backup
+set cpoptions+=J		" See: `:h cpo-J`, http://go.horns.by/omkld
 
 if has('mouse')
 	set mouse=a
-
-	" Fix mouse under tmux
-	" TODO: this is probably something that I should fix in my tmux settings
-	if !empty($TMUX) && &ttym == "xterm"
-		set ttym=xterm2
+        if !empty($TMUX) && &ttym == "xterm"	" Fix mouse support under tmux
+		set ttym=xterm2			" TODO fix in my tmux settings
 	end
 end
-if &t_Co > 2 || has("gui_running") | sy on | set hls | endif
 
-if has("vms") | set nobk | else | set bk | endif
+if &t_Co > 2 || has("gui_running")		" Let there be color
+	syntax on
+	set hlsearch
+end
 
-if &sh =~ 'fish' | set sh=/bin/bash | endif
+if &shell =~ 'fish'				" TODO I want to use fish
+	set sh=/bin/bash
+end
 
 if has("autocmd")
-	filet plugin indent on
+	filetype plugin indent on
 	aug vimrcEx | au!
 		" Jump to the last position when reopening a file.
-		au BufReadPost *
-		\ if line("'\"") > 1 && line("'\"") <= line("$") |
-		\	exe "normal! g`\"" |
-		\ endif
+		au BufReadPost * RestorePosition
 	aug END
 else
-	set ai
+	set autoindent
 endif
-" Diff Original File: see the diff between current buff & original file
-if !exists(":DiffOrig")
-	com DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
+
+" See: `:h restore-position`, `:h last-position-jump`
+command! RestorePosition if line("'\"") > 1 && line("'\"") <= line("$") |
+\	exe "normal! g`\"" |
+\ end
+
+" See: `:h diff-original-file`
+command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 	\ | wincmd p | diffthis
-endif
+
 " Mappings: --------------------------------------------------------------
 
 nnoremap <Leader>V	:belowright vsplit $MYVIMRC<CR>
@@ -77,9 +81,6 @@ noremap!           ~
 "÷
 
 " Exercises: -------------------------------------------------------------
-nnoremap <Leader>j  ddp
-nnoremap <Leader>k  ddkP
-nnoremap <Leader>ev :vs $MYVIMRC<CR>
 
 " Old Settings: to be reviewed
 "version 6.0
