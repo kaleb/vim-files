@@ -60,3 +60,6 @@
 [submodule "bundle/python-indent"]
 	path = bundle/python-indent
 	url = git@github.com:hynek/vim-python-pep8-indent.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git

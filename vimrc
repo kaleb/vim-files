@@ -46,6 +46,10 @@ if !exists(":DiffOrig")
 endif
 " Mappings: --------------------------------------------------------------
 
+nnoremap <Leader>V	:belowright vsplit $MYVIMRC<CR>
+nnoremap <Leader>Q	:belowright vertical cwindow<CR>
+nnoremap <Leader>L	:belowright vertical lwindow<CR>
+
 " <Space> as half-page down
 nnoremap <Space>    <C-D>
 " Next and previous tab
