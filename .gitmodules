@@ -40,7 +40,7 @@
 	ignore = untracked
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
+	url = git://github.com/scrooloose/syntastic.git
 	fetchRecurseSubmodules = true
 	ignore = untracked
 [submodule "bundle/NERDTree"]
