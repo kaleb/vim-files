@@ -33,9 +33,9 @@
 	url = git://github.com/mattn/calendar-vim.git
 	fetchRecurseSubmodules = true
 	ignore = untracked
-[submodule "bundle/zencoding"]
-	path = bundle/zencoding
-	url = git://github.com/mattn/zencoding-vim.git
+[submodule "bundle/emmet"]
+	path = bundle/emmet
+	url = git://github.com/mattn/emmet-vim.git
 	fetchRecurseSubmodules = true
 	ignore = untracked
 [submodule "bundle/syntastic"]
