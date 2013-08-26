@@ -47,11 +47,6 @@
 	path = bundle/NERDTree
 	url = git://github.com/scrooloose/nerdtree
 	fetchRecurseSubmodules = true
-[submodule "bundle/matchit"]
-	path = bundle/matchit
-	url = git://github.com/vim-scripts/matchit.zip.git
-	fetchRecurseSubmodules = true
-	ignore = untracked
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = git://github.com/groenewege/vim-less.git
@@ -64,3 +59,6 @@
 [submodule "bundle/css3"]
 	path = bundle/css3
 	url = git://github.com/hail2u/vim-css3-syntax.git
+[submodule "bundle/sensible"]
+	path = bundle/sensible
+	url = git://github.com/tpope/vim-sensible.git
