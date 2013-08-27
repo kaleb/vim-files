@@ -4,7 +4,6 @@ ru bundle/pathogen/autoload/pathogen.vim | call pathogen#infect()
 Helptags
 let $MYVIMRC = expand("<sfile>")
 
-set nocp
 set ruler
 set sc
 set incsearch
