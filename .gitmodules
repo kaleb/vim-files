@@ -33,25 +33,20 @@
 	url = git://github.com/mattn/calendar-vim.git
 	fetchRecurseSubmodules = true
 	ignore = untracked
-[submodule "bundle/zencoding"]
-	path = bundle/zencoding
-	url = git://github.com/mattn/zencoding-vim.git
+[submodule "bundle/emmet"]
+	path = bundle/emmet
+	url = git://github.com/mattn/emmet-vim.git
 	fetchRecurseSubmodules = true
 	ignore = untracked
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
+	url = git://github.com/scrooloose/syntastic.git
 	fetchRecurseSubmodules = true
 	ignore = untracked
 [submodule "bundle/NERDTree"]
 	path = bundle/NERDTree
 	url = git://github.com/scrooloose/nerdtree
 	fetchRecurseSubmodules = true
-[submodule "bundle/matchit"]
-	path = bundle/matchit
-	url = git://github.com/vim-scripts/matchit.zip.git
-	fetchRecurseSubmodules = true
-	ignore = untracked
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = git://github.com/groenewege/vim-less.git
@@ -67,3 +62,6 @@
 [submodule "bundle/editorconfig"]
 	path = bundle/editorconfig
 	url = git://github.com/editorconfig/editorconfig-vim.git
+[submodule "bundle/sensible"]
+	path = bundle/sensible
+	url = git://github.com/tpope/vim-sensible.git
