@@ -17,6 +17,8 @@ set splitbelow
 set splitright
 set backup
 set cpoptions+=J		" See: `:h cpo-J`, http://go.horns.by/omkld
+set hidden			" Thanks: vim-cast#6 http://go.horns.by/inuif
+
 
 if has('mouse')
 	set mouse=a
