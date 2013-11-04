@@ -8,7 +8,7 @@ if exists("g:loaded_pathogen")
   Helptags
 endif
 
-" Options --------------------------------------------------------------------
+" Options: --------------------------------------------------------------------
 
 set ssop-=options
 set tildeop
@@ -17,6 +17,10 @@ set splitright
 set backup
 set cpoptions+=J		" See: `:h cpo-J`, http://go.horns.by/omkld
 set hidden			" Thanks: vim-cast#6 http://go.horns.by/inuif
+set number
+set relativenumber
+set numberwidth=4
+set foldcolumn=4
 
 
 if has('mouse')
