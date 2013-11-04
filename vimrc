@@ -72,6 +72,10 @@ noremap!           ~
 
 let g:netrw_liststyle=3
 
+" syntastic Settings: --------------------------------------------------------
+
+let g:syntastic_auto_loc_list=1
+
 " Old Settings: to be reviewed
 "nmap gx <Plug>NetrwBrowseX
 "nnoremap <silent> <Plug>NetrwBrowseX :call netrw#NetrwBrowseX(expand("<cWORD>"),0)
