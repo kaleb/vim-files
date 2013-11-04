@@ -9,7 +9,6 @@ if exists("g:loaded_pathogen")
 endif
 
 " Options --------------------------------------------------------------------
-" Statusline
 
 set ssop-=options
 set tildeop
@@ -64,6 +63,10 @@ noremap!           `
 noremap            ~
 noremap!           ~
 "÷
+
+" pi_netrw Settings: ---------------------------------------------------------
+
+let g:netrw_liststyle=3
 
 " Old Settings: to be reviewed
 "nmap gx <Plug>NetrwBrowseX
