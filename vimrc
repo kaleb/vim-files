@@ -49,15 +49,13 @@ command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 
 " Mappings: --------------------------------------------------------------
 
-nnoremap <Leader>V	:belowright vsplit $MYVIMRC<CR>
-nnoremap <Leader>Q	:belowright vertical cwindow<CR>
-nnoremap <Leader>L	:belowright vertical lwindow<CR>
+let maplocalleader = " "
 
-" <Space> as half-page down
-nnoremap <Space>    <C-D>
-" Next and previous tab
-nnoremap <C-Tab>    gt
-nnoremap <S-C-Tab>  gT
+nnoremap <Leader>V		:belowright vsplit $MYVIMRC<CR>
+nnoremap <Leader>Q		:belowright vertical cwindow<CR>
+nnoremap <Leader>L		:belowright vertical lwindow<CR>
+
+nnoremap <LocalLeader><Space>	<C-D>
 " For my Sidekick 4g which does not have ` or ~ keys
 " Android alt+w
 noremap            `
