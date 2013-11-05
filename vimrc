@@ -18,6 +18,7 @@ set backup
 set cpoptions+=J		" See: `:h cpo-J`, http://go.horns.by/omkld
 set hidden			" Thanks: vim-cast#6 http://go.horns.by/inuif
 set background=dark
+set wildmode=list:longest	" make completion menu behave like shell
 
 " Columns
 set number
