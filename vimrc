@@ -10,13 +10,16 @@ endif
 
 " Options: --------------------------------------------------------------------
 
-set ssop-=options
+set sessionoptions-=options
 set tildeop
 set splitbelow
 set splitright
 set backup
 set cpoptions+=J		" See: `:h cpo-J`, http://go.horns.by/omkld
 set hidden			" Thanks: vim-cast#6 http://go.horns.by/inuif
+set background=dark
+
+" Columns
 set number
 set relativenumber
 set numberwidth=4
