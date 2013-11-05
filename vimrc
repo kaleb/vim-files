@@ -55,7 +55,7 @@ command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 
 " Mappings: --------------------------------------------------------------
 
-let maplocalleader = " "
+let maplocalleader = "\<Space>"
 
 nnoremap <Leader>V		:belowright vsplit $MYVIMRC<CR>
 nnoremap <Leader>Q		:belowright vertical cwindow<CR>
