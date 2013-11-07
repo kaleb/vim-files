@@ -58,13 +58,16 @@ command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 
 " Mappings: --------------------------------------------------------------
 
-let maplocalleader = "\<Space>"
+let mapleader = "\<Space>"
 
+nnoremap <Leader> <NOP>
 nnoremap <Leader>V		:belowright vsplit $MYVIMRC<CR>
 nnoremap <Leader>Q		:belowright vertical cwindow<CR>
 nnoremap <Leader>L		:belowright vertical lwindow<CR>
+nnoremap <Leader>t"		:!tmux split-window -v<CR><CR>
+nnoremap <Leader>t%		:!tmux split-window -h<CR><CR>
 
-nnoremap <LocalLeader><Space>	<C-D>
+nnoremap <Leader><Space>	<C-D>
 " For my Sidekick 4g which does not have ` or ~ keys
 " Android alt+w
 noremap            `
@@ -81,6 +84,10 @@ let g:netrw_liststyle=3
 " syntastic Settings: --------------------------------------------------------
 
 let g:syntastic_auto_loc_list=1
+
+" fugitive settings/abbreviations: -------------------------------------------
+
+cnoreabbrev gst Gst
 
 " Old Settings: to be reviewed
 "nmap gx <Plug>NetrwBrowseX
