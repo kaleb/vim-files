@@ -27,6 +27,7 @@ set number
 set relativenumber
 set numberwidth=4
 set foldcolumn=4
+set colorcolumn=80
 
 
 if has('mouse')
