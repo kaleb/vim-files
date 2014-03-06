@@ -49,9 +49,7 @@ if has("autocmd")
 end
 
 " See: `:h restore-position`, `:h last-position-jump`
-command! RestorePosition if line("'\"") > 1 && line("'\"") <= line("$") |
-\	exe "normal! g`\"" |
-\ end
+command! RestorePosition normal! g`"
 
 " See: `:h diff-original-file`
 command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
