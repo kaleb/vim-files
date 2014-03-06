@@ -15,12 +15,12 @@ set tildeop
 set splitbelow
 set splitright
 set backup
-set cpoptions+=J		" See: `:h cpo-J`, http://go.horns.by/omkld
-set hidden			" Thanks: vim-cast#6 http://go.horns.by/inuif
+set cpoptions+=J                " See: `:h cpo-J`, http://go.horns.by/omkld
+set hidden                      " Thanks: vim-cast#6 http://go.horns.by/inuif
 set background=dark
-set wildmode=list:longest	" make completion menu behave like shell
+set wildmode=list:longest       " make completion menu behave like shell
 set ignorecase
-set smartcase			" search is case-sensitive when using a capital letter
+set smartcase                   " search is case-sensitive when using a capital letter
 
 " Columns
 set number
@@ -31,12 +31,12 @@ set foldcolumn=4
 
 if has('mouse')
 	set mouse=a
-        if !empty($TMUX) && &ttym == "xterm"	" Fix mouse support under tmux
-		set ttym=xterm2			" TODO fix in my tmux settings
+	if !empty($TMUX) && &ttym == "xterm"    " Fix mouse support under tmux
+		set ttym=xterm2                 " TODO fix in my tmux settings
 	end
 end
 
-if &t_Co > 2 || has("gui_running")		" Let there be color
+if &t_Co > 2 || has("gui_running")              " Let there be color
 	set hlsearch
 end
 
@@ -54,20 +54,20 @@ command! RestorePosition if line("'\"") > 1 && line("'\"") <= line("$") |
 
 " See: `:h diff-original-file`
 command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
-	\ | wincmd p | diffthis
+\	 | wincmd p | diffthis
 
 " Mappings: --------------------------------------------------------------
 
 let mapleader = "\<Space>"
 
 nnoremap <Leader> <NOP>
-nnoremap <Leader>V		:belowright vsplit $MYVIMRC<CR>
-nnoremap <Leader>Q		:belowright vertical cwindow<CR>
-nnoremap <Leader>L		:belowright vertical lwindow<CR>
-nnoremap <Leader>t"		:!tmux split-window -v<CR><CR>
-nnoremap <Leader>t%		:!tmux split-window -h<CR><CR>
+nnoremap <Leader>V              :belowright vsplit $MYVIMRC<CR>
+nnoremap <Leader>Q              :belowright vertical cwindow<CR>
+nnoremap <Leader>L              :belowright vertical lwindow<CR>
+nnoremap <Leader>t"             :!tmux split-window -v<CR><CR>
+nnoremap <Leader>t%             :!tmux split-window -h<CR><CR>
 
-nnoremap <Leader><Space>	<C-D>
+nnoremap <Leader><Space>        <C-D>
 " For my Sidekick 4g which does not have ` or ~ keys
 " Android alt+w
 noremap            `
