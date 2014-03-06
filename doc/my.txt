@@ -15,3 +15,7 @@ that are part of Git repositories).
 :OpenOrig                                       *:OpenOrig*
 OpenOrig()                                      *OpenOrig()*
 		Open saved copy of current file in vertical split.
+
+:DiffOrig                                       *my-:DiffOrig*
+DiffOrig()                                      *DiffOrig()*
+		Diff against saved copy of current file.  See |:DiffOrig|.

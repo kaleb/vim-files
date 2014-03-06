@@ -51,11 +51,17 @@ end
 " See: `:h restore-position`, `:h last-position-jump`
 command! RestorePosition normal! g`"
 
-" See: `:h diff-original-file`
-command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
-\	 | wincmd p | diffthis
+" See: my-:DiffOrig
+command! DiffOrig call DiffOrig()
 
-" Open original copy of current file in a vertical split
+func! DiffOrig()
+	OpenOrig
+	diffthis
+	wincmd p
+	diffthis
+endfunc
+
+" See: :OpenOrig
 command! OpenOrig call OpenOrig()
 
 func! OpenOrig()
