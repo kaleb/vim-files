@@ -15,12 +15,12 @@ set tildeop
 set splitbelow
 set splitright
 set backup
-set cpoptions+=J                " See: `:h cpo-J`, http://go.horns.by/omkld
-set hidden                      " Thanks: vim-cast#6 http://go.horns.by/inuif
+set cpoptions+=J          " See: `:h cpo-J`, http://go.horns.by/omkld
+set hidden                " Thanks: vim-cast#6 http://go.horns.by/inuif
 set background=dark
-set wildmode=list:longest       " make completion menu behave like shell
+set wildmode=list:longest " make completion menu behave like shell
 set ignorecase
-set smartcase                   " search is case-sensitive when using a capital letter
+set smartcase             " case-sensitive search when using a capital letter
 
 " Columns
 set number
