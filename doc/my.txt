@@ -1,0 +1,17 @@
+*my.txt*  Kaleb's ViM Files
+
+Author:  Kaleb Hornsby <http://kaleb.horns.by/>
+License: All rights reserved
+
+INTRODUCTION                                    *my*
+
+These are my vim-files.  Check the code comments for more information.
+
+COMMANDS                                        *my-commands*
+
+These commands are local to the buffers in which they work (generally, buffers
+that are part of Git repositories).
+
+:OpenOrig                                       *:OpenOrig*
+OpenOrig()                                      *OpenOrig()*
+		Open saved copy of current file in vertical split.

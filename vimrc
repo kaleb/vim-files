@@ -55,6 +55,17 @@ command! RestorePosition normal! g`"
 command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 \	 | wincmd p | diffthis
 
+" Open original copy of current file in a vertical split
+command! OpenOrig call OpenOrig()
+
+func! OpenOrig()
+	vnew
+	set buftype=nofile
+	read #
+	0 delete _
+endfunc
+
+
 " Mappings: --------------------------------------------------------------
 
 let mapleader = "\<Space>"
