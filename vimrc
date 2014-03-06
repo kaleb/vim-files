@@ -21,6 +21,8 @@ set background=dark
 set wildmode=list:longest " make completion menu behave like shell
 set ignorecase
 set smartcase             " case-sensitive search when using a capital letter
+set modeline              " Debian derivatives disable 'modeline'
+set modelines=5
 
 " Columns
 set number
