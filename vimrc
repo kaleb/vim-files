@@ -107,6 +107,10 @@ let g:syntastic_auto_loc_list=1
 
 cnoreabbrev gst Gst
 
+" calendr Settings: ----------------------------------------------------------
+
+let g:calendar_diary = "~/.calendar"
+
 " Old Settings: to be reviewed
 "nmap gx <Plug>NetrwBrowseX
 "nnoremap <silent> <Plug>NetrwBrowseX :call netrw#NetrwBrowseX(expand("<cWORD>"),0)
