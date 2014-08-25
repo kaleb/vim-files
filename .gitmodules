@@ -69,3 +69,6 @@
 [submodule "bundle/css3"]
 	path = bundle/css3
 	url = git://github.com/hail2u/vim-css3-syntax.git
+[submodule "bundle/tern"]
+	path = bundle/tern
+	url = git@github.com:marijnh/tern_for_vim.git
