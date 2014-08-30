@@ -4,6 +4,9 @@ if exists("did_load_filetypes")
 endif
 
 augroup filetypedetect
-  au! BufRead,BufNewFile *.markdown,*.mkd,*.md setf markdown
-  au! BufRead,BufNewFile *.go setf golang
+
+au! BufRead,BufNewFile *.markdown,*.mkd,*.md setf markdown
+au! BufRead,BufNewFile *.go setf golang
+au! BufNewFile,BufRead *.git/modules/*/COMMIT_EDITMSG setf gitcommit
+
 augroup END
