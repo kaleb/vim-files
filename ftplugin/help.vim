@@ -1,3 +1,5 @@
 " vim help file settings
 " Author: <kaleb@horns.by>
-setl kp=:help
+setl keywordprg=:help
+setl colorcolumn=
+setl foldcolumn=0
