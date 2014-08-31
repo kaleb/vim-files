@@ -9,6 +9,9 @@ if !isdirectory($XDG_CACHE_HOME  . "/vim/backup")
 endif
 set backupdir=$XDG_CACHE_HOME/vim/backup//,/var/tmp//,/tmp//
 
+" Double slash does not actually work for backupdir, here's a fix
+au BufWritePre * let &backupext='@'.substitute(substitute(substitute(expand('%:p:h'), '/', '%', 'g'), '\', '%', 'g'),  ':', '', 'g')
+
 " see :help persistent-undo
 if !isdirectory($XDG_CACHE_HOME  . "/vim/undo")
   call mkdir($XDG_CACHE_HOME . "/vim/undo", "p")
