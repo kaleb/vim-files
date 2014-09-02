@@ -5,22 +5,22 @@ if empty($XDG_CONFIG_HOME)
   let $XDG_CONFIG_HOME = '~/.config'
 endif
 
-if !isdirectory($XDG_CACHE_HOME  . "/vim/swap")
+if !isdirectory($XDG_CACHE_HOME . "/vim/swap")
   call mkdir($XDG_CACHE_HOME . "/vim/swap", "p")
 endif
 set directory=$XDG_CACHE_HOME/vim/swap//,/var/tmp//,/tmp//
 
 
-if !isdirectory($XDG_CACHE_HOME  . "/vim/backup")
+if !isdirectory($XDG_CACHE_HOME . "/vim/backup")
   call mkdir($XDG_CACHE_HOME . "/vim/backup", "p")
 endif
 set backupdir=$XDG_CACHE_HOME/vim/backup//,/var/tmp//,/tmp//
 
 " Double slash does not actually work for backupdir, here's a fix
-au BufWritePre * let &backupext='@'.substitute(substitute(substitute(expand('%:p:h'), '/', '%', 'g'), '\', '%', 'g'),  ':', '', 'g')
+au BufWritePre * let &backupext='@'.substitute(substitute(substitute(expand('%:p:h'), '/', '%', 'g'), '\', '%', 'g'), ':', '', 'g')
 
 " see :help persistent-undo
-if !isdirectory($XDG_CACHE_HOME  . "/vim/undo")
+if !isdirectory($XDG_CACHE_HOME . "/vim/undo")
   call mkdir($XDG_CACHE_HOME . "/vim/undo", "p")
 endif
 set undodir=$XDG_CACHE_HOME/vim/undo//,/var/tmp//,/tmp//
