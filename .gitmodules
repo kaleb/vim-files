@@ -72,3 +72,9 @@
 [submodule "bundle/tern"]
 	path = bundle/tern
 	url = git@github.com:marijnh/tern_for_vim.git
+[submodule "bundle/ft-javascript"]
+	path = bundle/ft-javascript
+	url = git@github.com:pangloss/vim-javascript.git
+[submodule "bundle/ft-json"]
+	path = bundle/ft-json
+	url = git@github.com:elzr/vim-json.git

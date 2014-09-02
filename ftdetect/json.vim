@@ -1,1 +1,1 @@
-au BufNewFile,BufRead .tern-project setf javascript
+au BufNewFile,BufRead .tern-project setf json
