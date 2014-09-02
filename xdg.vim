@@ -27,6 +27,9 @@ set undodir=$XDG_CACHE_HOME/vim/undo//,/var/tmp//,/tmp//
 set undofile
 
 set viminfo+=n$XDG_CACHE_HOME/vim/viminfo
-"viminfo=!,'100,<50,s10,h,n$XDG_CACHE_HOME/vim/viminfo
-set runtimepath=$XDG_CONFIG_HOME/vim,/var/lib/vim/addons,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,/var/lib/vim/addons/after,$XDG_CONFIG_HOME/vim/after
+
+set runtimepath-=~/.vim
+set runtimepath^=$XDG_CONFIG_HOME/vim
+set runtimepath-=~/.vim/after
+set runtimepath+=$XDG_CONFIG_HOME/vim/after
 source $XDG_CONFIG_HOME/vim/vimrc
