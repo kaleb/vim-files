@@ -23,6 +23,7 @@ set ignorecase
 set smartcase             " case-sensitive search when using a capital letter
 set modeline              " Debian derivatives disable 'modeline'
 set modelines=5
+set whichwrap=<,[,h,l,],>
 
 " Columns
 set number
