@@ -1,3 +1,9 @@
+if empty($XDG_CACHE_HOME)
+	let $XDG_CACHE_HOME = $HOME."/.cache"
+endif
+if empty($XDG_CONFIG_HOME)
+	let $XDG_CONFIG_HOME = $HOME."/.config"
+endif
 if !isdirectory($XDG_CACHE_HOME  . "/vim/swap")
   call mkdir($XDG_CACHE_HOME . "/vim/swap", "p")
 endif
