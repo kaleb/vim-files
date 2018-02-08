@@ -5,11 +5,10 @@ if empty($XDG_CONFIG_HOME)
   let $XDG_CONFIG_HOME = $HOME.'/.config'
 endif
 
-if !isdirectory($XDG_CACHE_HOME . "/vim/swap")
+if !isdirectory($XDG_CACHE_HOME  . "/vim/swap")
   call mkdir($XDG_CACHE_HOME . "/vim/swap", "p")
 endif
 set directory=$XDG_CACHE_HOME/vim/swap//,/var/tmp//,/tmp//
-
 
 if !isdirectory($XDG_CACHE_HOME . "/vim/backup")
   call mkdir($XDG_CACHE_HOME . "/vim/backup", "p")
